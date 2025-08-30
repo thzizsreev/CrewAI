@@ -1,0 +1,28 @@
+# src/my_project/config/tasks.yaml
+
+analyze_filings_task:
+  description: >
+    Perform a deep and elucidative analysis of each filing. Use the data in
+    {filings_text} to incorporate company history and past activity. Present all
+    findings in detail, leveraging appropriate tables and graphs to display the
+    information clearly.
+  expected_output: >
+    A comprehensive, well-formatted markdown document containing a detailed
+    analysis for each filing. The output should be ready to be presented
+    directly to the user and should be clear and highly detailed.
+
+summarize_filings_task:
+  description: >
+    Review the detailed analysis provided by the financial researcher. Based on
+    this content, append an overall summarization that highlights the key
+    findings and provides a brief conclusion. Do not change or erase the
+    original analysis.
+  expected_output: >
+    A concise and professional markdown report titled "SEC Filings Summary".
+    The report MUST begin with an overall summary of all findings.
+    Below the summary, create a bulleted list of key takeaways, each formatted as a
+    bolded headline followed by a brief description.
+    The report should then append the full, unaltered analysis provided by the
+    financial researcher.STRICTLY DONT WRITE ```markdown in the first line of the output file
+
+
