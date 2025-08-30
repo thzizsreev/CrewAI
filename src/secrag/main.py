@@ -10,11 +10,11 @@ from .rss import RSSFetcher
 from .parse_sec_filings import SECFilingParser
 
 from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
+from langchain_community.llms import Ollama
 from langchain.chains import RetrievalQA
-from langchain.llms import Ollama
 
-from crews.ragbuildercrew.ragbuildercrew import RAGBuilderCrew
+from .crews.ragbuildercrew.ragbuildercrew import RAGBuilderCrew
 #from .report_generator_crew import ReportGeneratorCrew
 
 
@@ -55,7 +55,7 @@ def test_rag_query(query: str):
         result = qa_chain.run(query)
         print("\n--- RAG Test Query Result ---")
         print(result)
-        return result
+        #return result
     except Exception as e:
         print(f"Error during RAG test: {e}")
         return None

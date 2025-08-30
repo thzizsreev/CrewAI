@@ -1,11 +1,11 @@
 import os
 from dotenv import load_dotenv
 from crewai import Agent, Task, Crew, Process, LLM
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_core.documents import Document
 from typing import List, Dict, Any
-from secrag.src.secrag.tools.RAGTool import RAGBuildingTool
+from ...tools.RAGTool import RAGBuildingTool
 
 # from my_project.tools.parse_sec_filings import SECFilingParser
 # from my_project.tools.rss import RSSFetcher
@@ -58,7 +58,7 @@ class RAGBuilderCrew:
             agents=[data_ingestor],
             tasks=[ingest_filings_task],
             process=Process.sequential,
-            verbose=2
+            verbose=True
         )
         
         # Execute the task without explicit inputs, the agent will use its context

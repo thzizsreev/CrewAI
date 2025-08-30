@@ -1,9 +1,11 @@
 import os
 from crewai.tools import BaseTool
 from typing import List, Dict, Any
-from langchain.vectorstores import FAISS
+
+from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceHubEmbeddings
 from langchain_core.documents import Document
+
 from dotenv import load_dotenv
 
 # Load environment variables

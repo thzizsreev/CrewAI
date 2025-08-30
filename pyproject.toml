@@ -9,6 +9,7 @@ dependencies = [
     "feedparser>=6.0.11",
     "langchain>=0.3.27",
     "langchain-community[all]>=0.3.29",
+    "sentence-transformers>=5.1.0",
 ]
 
 [project.scripts]
