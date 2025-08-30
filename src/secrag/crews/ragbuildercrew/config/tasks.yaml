@@ -1,0 +1,6 @@
+build_rag_task:
+  description: >
+    Take the provided list of SEC filings and use the RAG Building Tool to
+    create and save a FAISS vector store.
+  expected_output: >
+    A confirmation message that the knowledge base has been successfully built and saved to disk.

@@ -1,0 +1,24 @@
+[project]
+name = "secrag"
+version = "0.1.0"
+description = "SecRag using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[tools]>=0.165.1,<1.0.0",
+    "feedparser>=6.0.11",
+    "langchain>=0.3.27",
+    "langchain-community[all]>=0.3.29",
+]
+
+[project.scripts]
+kickoff = "secrag.main:kickoff"
+run_crew = "secrag.main:kickoff"
+plot = "secrag.main:plot"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "flow"
