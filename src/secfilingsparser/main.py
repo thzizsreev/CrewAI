@@ -2,7 +2,8 @@
 from pydantic import BaseModel, Field
 from typing import List, Dict, Any
 import os
-
+import markdown
+from weasyprint import HTML
 from crewai.flow import Flow, listen, start
 
 from .crews.poem_crew.FinancialFilingsCrew import FinancialFilingsCrew
@@ -47,12 +48,32 @@ class PoemFlow(Flow[PoemState]):
             all_analysis += analysis[1:] + "\n\n"
         
         # This is where the output is written to a new file
+        self.analysis = all_analysis
         output_file_path = "summary.md"
         with open(output_file_path, "w") as f:
             f.write(all_analysis)
         
         self.state.analysis = all_analysis
         print(f"Final analysis written to '{output_file_path}'.")
+
+    @listen(analyze_and_summarize)
+    def HTMLRender(self):
+        try:
+            from markdown import markdown
+            from weasyprint import HTML
+        except ImportError as e:
+            print(f"Required libraries for HTML rendering are not installed: {e}")
+            return
+        
+        if not self.state.analysis:
+            print("No analysis available to render.")
+            return
+        
+        html_content = markdown(self.state.analysis)
+        html = HTML(string=html_content)
+        output_pdf_path = "summary.pdf"
+        html.write_pdf(output_pdf_path)
+        print(f"PDF summary written to '{output_pdf_path}'.")
 
 def kickoff():
     poem_flow = PoemFlow()
