@@ -1,127 +1,83 @@
 ```markdown
-## SEC Filings Summary
+# SEC Filings Summary
 
 **Overall Summary:**
 
-This report analyzes an SEC Form 4 filing by Horizon Kinetics Asset Management LLC (HKAM), a 10% owner of Texas Pacific Land Corp (TPL), dated October 26, 2023, with a period of report of August 28, 2025. The filing indicates no recent transactions (purchase or sale) in TPL stock by HKAM. However, the filing references a previous Schedule 13D amendment, disclosing HKAM's beneficial ownership of 3,578,173 shares and detailing the direct and indirect interests of Murray Stahl. The analysis emphasizes the importance of monitoring future filings from HKAM and tracking oil and gas prices in the Permian Basin, which significantly impact TPL's financial performance. While the current filing reflects no immediate changes in HKAM's holdings, it reinforces their continued significant stake in TPL and highlights the need for ongoing monitoring of their investment strategy and TPL's overall financial health.
+This report analyzes an SEC Form 4 filing for Atlassian Corp (TEAM) concerning transactions by Scott Farquhar. The filing details the sale of Atlassian shares executed under a pre-arranged Rule 10b5-1 trading plan adopted on February 12, 2025. The hypothetical transaction table illustrates how the sales occurred at varying weighted-average prices, reflecting market fluctuations. The use of a 10b5-1 plan suggests these sales were planned well in advance, potentially mitigating concerns about insider trading based on current sentiment. Further analysis, including a review of Atlassian's financial statements, past Form 4 filings, and overall stock performance, is recommended to provide a comprehensive understanding of the implications. The footnotes are critical in understanding the nature and context of the transactions, especially regarding price volatility and indirect holdings.
 
 **Key Takeaways:**
 
-*   **Continued Significant Ownership:** Horizon Kinetics Asset Management LLC remains a significant (10%) owner of Texas Pacific Land Corp.
-    *   This reaffirms HKAM's influence over TPL's decisions and the importance of monitoring their investment activities.
-*   **No Recent Transactions:** The Form 4 filing indicates no buying or selling activity during the reporting period.
-    *   This suggests a stable investment position for the time being, but future filings need to be monitored for potential changes.
-*   **Reference to Schedule 13D:** The filing references a prior Schedule 13D amendment detailing beneficial ownership.
-    *   This highlights the importance of understanding HKAM's long-term investment intentions and potential influence on TPL's management.
-*   **Murray Stahl's Interests:** The footnote clarifies Murray Stahl's direct and indirect interests in TPL shares.
-    *   This provides transparency regarding individual holdings within HKAM, though investment discretion is reportedly separate.
-*   **Importance of External Factors:** TPL's performance is closely tied to oil and gas prices and activity in the Permian Basin.
-    *   Monitoring these external factors is crucial for assessing TPL's financial health and stock price.
+*   **Rule 10b5-1 Trading Plan:** Sales were executed under a pre-arranged Rule 10b5-1 trading plan, suggesting the transactions were planned in advance and potentially less indicative of Farquhar's current sentiment on the company.
+*   **Price Volatility:** The weighted average prices and price ranges within the footnotes indicate intraday price volatility of TEAM stock during the sales.
+*   **Indirect Holdings:** Farquhar may hold shares indirectly through an investment partnership, as indicated by footnote F3, which could influence his overall investment strategy and reporting requirements.
+*   **Further Research Needed:** A comprehensive understanding requires further research into Atlassian's financial performance, Farquhar's past trading activity, and overall market conditions.
+*   **Footnote Importance:** The footnotes provide critical context, including details on the Rule 10b5-1 plan, price volatility, and indirect holdings, which are essential for accurate interpretation of the transaction data.
 
-## SEC Form 4 Filing Analysis: Texas Pacific Land Corp (TPL)
+## SEC Form 4 Filing Analysis: Atlassian Corp (TEAM) - Scott Farquhar
 
 **Date:** October 26, 2023
 
-**1. Filing Overview**
+**Issuer:** Atlassian Corp (TEAM)
+**Reporting Owner:** Scott Farquhar
+**Form Type:** 4
+**Period of Report:** 2025-08-28
+**Signature:** /s/ Veena Bhatia, Attorney-in-Fact for Farquhar Scott
+**Date of Signature:** 2025-08-29
 
-This report analyzes a Form 4 filing submitted to the Securities and Exchange Commission (SEC) regarding transactions in Texas Pacific Land Corp (TPL) stock. The filing was made by HORIZON KINETICS ASSET MANAGEMENT LLC, a reported 10% owner of TPL.
+### 1. Filing Overview
 
-**2. Filing Details**
+This Form 4 filing reports transactions by Scott Farquhar, a reporting owner of Atlassian Corp (TEAM). The filing indicates sales of Atlassian shares. Crucially, the transactions were executed under a pre-arranged Rule 10b5-1 trading plan.
 
-*   **Form Type:** 4
-*   **Period of Report:** 2025-08-28
-*   **Issuer:**
-    *   **CIK:** 0001811074
-    *   **Name:** Texas Pacific Land Corp
-    *   **Symbol:** TPL
-*   **Reporting Owner:**
-    *   **CIK:** 0001056823
-    *   **Name:** HORIZON KINETICS ASSET MANAGEMENT LLC
-    *   **Is Director:** False
-    *   **Is Officer:** False
-    *   **Is Ten Percent Owner:** True
-    *   **Is Other:** False
-*   **Non-Derivative Holdings:** None reported in this filing.
-*   **Derivative Transactions:** None reported in this filing.
-*   **Derivative Holdings:** None reported in this filing.
-*   **Footnotes:** F1
-*   **Signature:**
-    *   **Name:** /s/ Jay Kesslen, attorney-in-fact
-    *   **Date:** 2025-08-29
+### 2. Reporting Owner Details
 
-**3. Detailed Analysis**
+*   **CIK:** 0001666121
+*   **Name:** Farquhar Scott
+*   **Relationship to Issuer:**
+    *   Director: No
+    *   Officer: No
+    *   Ten Percent Owner: No
+    *   Other: No
 
-**3.1. Reporting Owner: Horizon Kinetics Asset Management LLC**
+Scott Farquhar's lack of direct officer or director status, while not explicitly stated, suggests he holds a significant, but not controlling, position within the company or is a major shareholder without an executive role. Typically, individuals filing Form 4s for large companies are either officers, directors, or beneficial owners of more than 10% of the company's stock.
 
-Horizon Kinetics Asset Management LLC (HKAM) is identified as a 10% owner of Texas Pacific Land Corp. This signifies that HKAM holds a significant ownership stake in TPL, granting them influence over the company's decisions. It's crucial to monitor their filings as they provide insights into their investment strategy and confidence in TPL's future.
+### 3. Transaction Analysis
 
-**3.2. Absence of Transactions**
+Since the provided data only includes the form's header information and footnotes, and no actual transaction data for derivative or non-derivative securities, I will create a hypothetical transaction table based on the footnotes to demonstrate the analysis I *would* perform if the data were present.  This will illustrate how the footnotes add critical color to the raw transaction data.
 
-The filing indicates no transactions in either non-derivative or derivative securities. This means that during the reporting period (2025-08-28), HKAM did not buy or sell any shares of TPL, nor did they engage in any transactions involving options, warrants, or other derivative instruments related to TPL stock.
+**Hypothetical Non-Derivative Transactions**
 
-**3.3. Footnote Analysis (F1)**
+| Transaction Date | Transaction Type | Security Type | Shares Sold | Price Per Share (Weighted Avg) | Footnote(s) |
+|------------------|-------------------|----------------|-------------|-------------------------------|------------|
+| 2025-08-28       | Sale              | Common Stock   | 10,000      | $173.50                       | F4         |
+| 2025-08-28       | Sale              | Common Stock   | 10,000      | $174.92                       | F5         |
+| 2025-08-28       | Sale              | Common Stock   | 10,000      | $175.85                       | F2         |
+| 2025-08-28       | Sale              | Common Stock   | 10,000      | $177.64                       | F6         |
+| 2025-08-28       | Sale              | Common Stock   | 10,000      | $176.96                       | F7         |
 
-The footnote (F1) references a previous Schedule 13D amendment filed by HKAM on December 18, 2024. This amendment disclosed beneficial ownership of 3,578,173 shares. It also mentions Murray Stahl's direct and indirect interests in TPL shares.
+**Analysis of Hypothetical Transactions:**
 
-*   **Key Information from Footnote:**
-    *   HKAM beneficially owns 3,578,173 shares.
-    *   Murray Stahl (likely a principal at HKAM) has a direct interest in 7,848 shares.
-    *   Murray Stahl has an indirect interest in approximately 156,083 shares.
-    *   The footnote clarifies that Mr. Stahl does not exercise investment discretion with respect to the securities of the Issuer.
+*   **Sales Execution:** The hypothetical table shows multiple sales of Atlassian common stock by Scott Farquhar on August 28, 2025.
+*   **Price Range:** The sales occurred at varying weighted-average prices, as detailed in the footnotes, reflecting market fluctuations throughout the day.
+*   **Rule 10b5-1 Plan (Footnote F1):**  The most critical detail is that these sales were executed *pursuant to a Rule 10b5-1 trading plan* adopted on February 12, 2025. This is extremely important because Rule 10b5-1 allows corporate insiders to sell shares according to a pre-arranged plan, which can provide a defense against accusations of insider trading. The plan is established when the insider does *not* possess material non-public information.
+*   **Price Volatility (Footnotes F2, F4, F5, F6, F7):** These footnotes indicate that each transaction was executed in multiple trades at varying prices. This is normal for large transactions, as the market price can fluctuate as the order is filled. The reporting person is committed to providing full details of the individual trades upon request. The price ranges provided in the footnotes ($173.17 to $177.80 in this hypothetical) give insight into the intraday price volatility of TEAM stock.
+*   **Indirect Holdings (Footnote F3):** While not directly related to these transactions, the footnote "Shares are held by Farquhar Investment Partnership No. 2" is important. It reveals that Farquhar may hold shares indirectly through an investment partnership, which could have its own investment strategies and reporting requirements. This could explain why Farquhar's direct holdings are not as substantial as one might expect for a founder or major figure in the company.
 
-**Implications of the Footnote:**
+### 4. Implications and Context
 
-The footnote provides context to HKAM's ownership and clarifies the individual interests of Murray Stahl.  The disclosure regarding investment discretion suggests a separation of control, even with individual holdings. The reference to the Schedule 13D amendment is important, as Schedule 13D filings are required when an entity acquires beneficial ownership of more than 5% of a company's voting stock and intends to influence the company's management.  The continued reference to this prior filing suggests that HKAM's intentions and influence remain consistent.
+*   **Rule 10b5-1 Plans:** The use of a 10b5-1 plan suggests Farquhar planned these sales well in advance. Investors often view sales under 10b5-1 plans as less indicative of the insider's current sentiment about the company's prospects than discretionary sales.
+*   **Volume and Price Impact:** Without knowing the total trading volume of TEAM on August 28, 2025, it's difficult to assess the impact of these sales on the stock price. However, large insider sales *can* sometimes create downward pressure, especially if they are perceived negatively by the market.
+*   **Long-Term Perspective:** It's crucial to consider these transactions in the context of Farquhar's overall holdings and Atlassian's performance. Is this a small portion of his holdings, or a significant reduction? What is the company's recent performance and outlook? This information is not available in the provided data but would be essential for a complete analysis.
 
-**4. Company Background: Texas Pacific Land Corp (TPL)**
+### 5. Further Research
 
-Texas Pacific Land Corp is a unique company with a long and storied history tied to the land in West Texas. Originally established in the late 19th century following the bankruptcy of the Texas and Pacific Railway, TPL owns approximately 880,000 acres of land in West Texas.
+To gain a more complete understanding of these transactions, further research is needed:
 
-**Key Aspects of TPL's Business:**
+*   **Review Atlassian's Financial Statements:** Analyze the company's recent financial performance, growth prospects, and any potential risks.
+*   **Examine Past Form 4 Filings:** Review Farquhar's past transaction history to identify any patterns or trends in his trading activity.  Look for other instances of 10b5-1 plan usage.
+*   **Analyze TEAM Stock Performance:** Assess the stock's performance relative to its peers and the overall market.
+*   **Monitor News and Analyst Reports:** Stay informed about any news or analyst reports that could impact Atlassian's stock price.
 
-*   **Land Ownership:** TPL's primary asset is its vast land holdings, which are strategically located in the Permian Basin, a major oil and gas producing region.
-*   **Revenue Streams:** TPL generates revenue through several avenues:
-    *   **Oil and Gas Royalties:** Leasing land to oil and gas operators and receiving royalties on production. This is a significant driver of revenue.
-    *   **Easements and Surface Leases:** Granting easements for pipelines, roadways, and other infrastructure.
-    *   **Land Sales:** Selling portions of its land holdings.
-    *   **Water Sales:** Selling or leasing water resources found on its land.
-*   **Unique Structure:** TPL operates with a relatively lean corporate structure, which has contributed to its high profitability.
+### 6. Conclusion
 
-**Historical Performance and Stock Price:**
-
-TPL's stock price is highly correlated with oil and gas prices and production activity in the Permian Basin. The company has historically generated significant returns for shareholders due to its unique business model and strategic land position.
-
-**5. Significance of the Filing**
-
-While this particular Form 4 indicates no recent transactions, it is still a relevant filing. It confirms HKAM's continued status as a significant shareholder. The reference to the Schedule 13D amendment and the details regarding beneficial ownership and individual interests provide valuable context for understanding HKAM's investment in TPL. Monitoring future filings from HKAM will be crucial for tracking their investment strategy and potential impact on TPL.
-
-**6. Recommendations**
-
-*   **Monitor Future Filings:** Closely track future Form 4 and Schedule 13D filings from Horizon Kinetics Asset Management LLC and other significant shareholders.
-*   **Analyze Transaction History:** Review past transaction history of HKAM to identify patterns in their buying and selling activity.
-*   **Track Oil and Gas Prices:** Monitor oil and gas prices and production activity in the Permian Basin, as these factors significantly influence TPL's financial performance and stock price.
-*   **Review TPL's Financial Reports:** Regularly review TPL's quarterly and annual reports (10-Q and 10-K filings) to assess the company's financial health and operational performance.
-
-**7. Tables and Graphs (Illustrative Examples)**
-
-*Note: Since the current filing does not contain transaction data, the following tables and graphs are illustrative examples of what could be included in an analysis of a Form 4 filing that *does* contain transaction data.*
-
-**Table 1: Example of Transaction Summary (If Transactions Were Present)**
-
-| Transaction Date | Security Type | Transaction Type | Shares Transacted | Price Per Share |
-|---|---|---|---|---|
-| 2025-08-28 | Common Stock | Purchase | 1,000 | $150.00 |
-| 2025-08-28 | Options | Sale | 500 | $5.00 |
-
-**Graph 1: Illustrative TPL Stock Price Chart**
-
-(A graph showing TPL's stock price over the past year, demonstrating trends and volatility.  This would typically be sourced from a financial data provider.)
-
-**Graph 2: Illustrative Graph of HKAM's Holdings Over Time**
-
-(A graph plotting the number of TPL shares held by HKAM over time, based on their SEC filings. This would show increases or decreases in their position.)
-
-**8. Conclusion**
-
-This Form 4 filing, while showing no current transactions, provides valuable information about Horizon Kinetics Asset Management LLC's continued significant ownership in Texas Pacific Land Corp. The reference to the Schedule 13D and the clarification of individual interests are important for understanding the context of their investment. Continuous monitoring of future filings and analysis of TPL's financial performance are crucial for investors.
+This Form 4 filing indicates pre-planned sales of Atlassian stock by Scott Farquhar under a Rule 10b5-1 trading plan. While the sales themselves don't necessarily signal a negative outlook, it's important to consider them in the context of Farquhar's overall holdings, the company's performance, and market conditions. Further research is recommended to gain a more comprehensive understanding. The footnotes are critical in understanding the nature and context of the transactions.
 ```

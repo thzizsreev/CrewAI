@@ -2,13 +2,15 @@
 from pydantic import BaseModel, Field
 from typing import List, Dict, Any
 import os
-import markdown
-from weasyprint import HTML
+import re
+
 from crewai.flow import Flow, listen, start
+
 
 from .crews.poem_crew.FinancialFilingsCrew import FinancialFilingsCrew
 from .rss import RSSFetcher
 from .parse_sec_filings import SECFilingParser
+from .crews.htmlrendercrew.htmlrendercrew import HTMLRenderCrew
 
 class PoemState(BaseModel):
     feed_entries: List[Dict[str, Any]] = []
@@ -58,22 +60,13 @@ class PoemFlow(Flow[PoemState]):
 
     @listen(analyze_and_summarize)
     def HTMLRender(self):
-        try:
-            from markdown import markdown
-            from weasyprint import HTML
-        except ImportError as e:
-            print(f"Required libraries for HTML rendering are not installed: {e}")
-            return
-        
-        if not self.state.analysis:
-            print("No analysis available to render.")
-            return
-        
-        html_content = markdown(self.state.analysis)
-        html = HTML(string=html_content)
-        output_pdf_path = "summary.pdf"
-        html.write_pdf(output_pdf_path)
-        print(f"PDF summary written to '{output_pdf_path}'.")
+        with open("summary.md", "r") as f:
+            markdown_content = f.read()
+
+        cleaned_text = re.sub(r"``markdown", "", markdown_content)
+
+        with open("summary.md", "w") as f:
+            f.write(cleaned_text)
 
 def kickoff():
     poem_flow = PoemFlow()

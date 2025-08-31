@@ -7,6 +7,7 @@ requires-python = ">=3.10,<3.14"
 dependencies = [
     "crewai[tools]>=0.165.1,<1.0.0",
     "feedparser>=6.0.11",
+    "langchain-community>=0.3.29",
 ]
 
 [project.scripts]

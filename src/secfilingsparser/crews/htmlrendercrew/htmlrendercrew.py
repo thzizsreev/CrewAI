@@ -2,63 +2,65 @@ from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 from crewai.agents.agent_builder.base_agent import BaseAgent
 from typing import List
-# If you want to run a snippet of code before or after the crew starts,
-# you can use the @before_kickoff and @after_kickoff decorators
-# https://docs.crewai.com/concepts/crews#example-crew-class-with-decorators
+from langchain_community.tools import DuckDuckGoSearchRun
 
 @CrewBase
-class Htmlrendercrew():
-    """Htmlrendercrew crew"""
-
-    agents: List[BaseAgent]
-    tasks: List[Task]
-
-    # Learn more about YAML configuration files here:
-    # Agents: https://docs.crewai.com/concepts/agents#yaml-configuration-recommended
-    # Tasks: https://docs.crewai.com/concepts/tasks#yaml-configuration-recommended
+class HTMLRenderCrew:
+    """A crew that takes markdown content and converts it into a styled HTML page."""
     
-    # If you would like to add tools to your agents, you can learn more about it here:
-    # https://docs.crewai.com/concepts/agents#agent-tools
-    @agent
-    def researcher(self) -> Agent:
-        return Agent(
-            config=self.agents_config['researcher'], # type: ignore[index]
-            verbose=True
-        )
+    # The agents_config and tasks_config attributes point to the YAML files
+    # that define the roles, goals, and descriptions for our agents and tasks.
+    # agents_config = 'src/secfilingsparser/crews/htmlrendercrew/config/agents.yaml'
+    # tasks_config = 'src/secfilingsparser/crews/htmlrendercrew/config/tasks.yaml'
 
     @agent
-    def reporting_analyst(self) -> Agent:
+    def markdown_converter(self) -> Agent:
+        """Agent responsible for converting markdown to raw HTML."""
         return Agent(
-            config=self.agents_config['reporting_analyst'], # type: ignore[index]
-            verbose=True
+            config=self.agents_config['markdown_converter'],
+            tools=[DuckDuckGoSearchRun()], # Tools can be added here
+            verbose=True,
+            allow_delegation=False
         )
 
-    # To learn more about structured task outputs,
-    # task dependencies, and task callbacks, check out the documentation:
-    # https://docs.crewai.com/concepts/tasks#overview-of-a-task
-    @task
-    def research_task(self) -> Task:
-        return Task(
-            config=self.tasks_config['research_task'], # type: ignore[index]
+    @agent
+    def html_stylist(self) -> Agent:
+        """Agent responsible for styling the raw HTML."""
+        return Agent(
+            config=self.agents_config['html_stylist'],
+            verbose=True,
+            allow_delegation=False
         )
 
     @task
-    def reporting_task(self) -> Task:
+    def convert_task(self) -> Task:
+        """Task to convert markdown to HTML."""
         return Task(
-            config=self.tasks_config['reporting_task'], # type: ignore[index]
-            output_file='report.md'
+            config=self.tasks_config['convert_to_html'],
+            agent=self.markdown_converter()
+        )
+
+    @task
+    def style_task(self) -> Task:
+        """Task to style the HTML page."""
+        return Task(
+            config=self.tasks_config['style_html_page'],
+            agent=self.html_stylist(),
+            context=[self.convert_task()],
+            output_file='output.html'
         )
 
     @crew
     def crew(self) -> Crew:
-        """Creates the Htmlrendercrew crew"""
-        # To learn how to add knowledge sources to your crew, check out the documentation:
-        # https://docs.crewai.com/concepts/knowledge#what-is-knowledge
-
+        """Creates and returns the HTMLRenderCrew."""
         return Crew(
-            agents=self.agents, # Automatically created by the @agent decorator
-            tasks=self.tasks, # Automatically created by the @task decorator
+            agents=self.agents,  # The agents are automatically populated by the @agent decorator
+            tasks=self.tasks,    # The tasks are automatically populated by the @task decorator
             process=Process.sequential,
-            verbose=True,
-            # process=Process.hierarchical, # In case you wanna use that instead https://docs.crewai.com/how-to/Hierarchical/
+            verbose=True
         )
+
+# This block allows the crew to be run directly from the command line for testing.
+
+
+

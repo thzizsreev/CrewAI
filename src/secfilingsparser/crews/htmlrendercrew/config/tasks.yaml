@@ -1,17 +1,16 @@
-research_task:
-  description: >
-    Conduct a thorough research about {topic}
-    Make sure you find any interesting and relevant information given
-    the current year is {current_year}.
-  expected_output: >
-    A list with 10 bullet points of the most relevant information about {topic}
-  agent: researcher
+convert_to_html:
+  description: "Take the provided markdown text, which contains an analysis of SEC filings, and convert it into a well-structured 
+                block of raw HTML. The output should only be the HTML body content (e.g., h3, p, ul, strong tags), not a full HTML document."
+  expected_output: "A string containing only the HTML representation of the markdown content's body.
+                 For example: '<h3>Analysis...</h3><p><strong>Key Findings:</strong>...</p>...'"
 
-reporting_task:
-  description: >
-    Review the context you got and expand each topic into a full section for a report.
-    Make sure the report is detailed and contains any and all relevant information.
-  expected_output: >
-    A fully fledged report with the main topics, each with a full section of information.
-    Formatted as markdown without '```'
-  agent: reporting_analyst
+style_html_page:
+  description: "Take the raw HTML block from the previous task and embed it into a complete, beautifully styled HTML5 document. 
+                You must create a full HTML page with a head and body. Use Tailwind CSS (loaded from a CDN) to style the page.
+                 The design should be professional, modern, and easy to read, with a clean layout, good typography, and appropriate spacing.
+                  The final output must be a single string containing the entire HTML document."
+  expected_output: "A single string containing a complete, well-formed HTML document (from <!DOCTYPE html> to </html>).
+                 The document must include a <head> with a link to the Tailwind CSS CDN and a 
+                 styled <body> that wraps the provided HTML content in a visually appealing layout. 
+                 The final output MUST BE ONLY the HTML code."
+

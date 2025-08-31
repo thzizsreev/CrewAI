@@ -53,7 +53,7 @@ class FinancialFilingsCrew():
         return Task(
             config=self.tasks_config['summarize_filings_task'],
             agent=self.report_analyst(),
-            output_file='sec_filings_report.md'
+            output_file='sec_filings_report.html'
         )
 
     @crew

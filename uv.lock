@@ -3703,12 +3703,14 @@ source = { editable = "." }
 dependencies = [
     { name = "crewai", extra = ["tools"] },
     { name = "feedparser" },
+    { name = "langchain-community" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "crewai", extras = ["tools"], specifier = ">=0.165.1,<1.0.0" },
     { name = "feedparser", specifier = ">=6.0.11" },
+    { name = "langchain-community", specifier = ">=0.3.29" },
 ]
 
 [[package]]
