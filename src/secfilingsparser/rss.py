@@ -69,8 +69,8 @@ class RSSFetcher():
                 filing_data["date"] = temp[1]
                 filings.append(filing_data)
 
-            if self.counter >= 20:  # temp limit for testing
-                break
+            # if self.counter >= 20:  # temp limit for testing
+            #     break
 
         return filings, True
 
